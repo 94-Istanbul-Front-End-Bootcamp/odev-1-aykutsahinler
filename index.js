@@ -1,7 +1,7 @@
 /* Selectors */
 
 let fullName = document.getElementById("nameSurname");
-let age = document.getElementById("age");
+let ageElement = document.getElementById("age");
 let showBtn = document.getElementById("showBtn");
 let linkedinUrl = document.getElementById("linkedinUrl");
 let githubUrl = document.getElementById("githubUrl");
@@ -19,8 +19,11 @@ showBtn.addEventListener("click", showInfos);
 /* Functions */
 
 function showInfos() {
-    fullName.innerHTML = "Aykut Şahinler";
-    age.innerHTML = "23";
+    let name = "Aykut";
+    let surname = "Şahinler";
+    let age = 23
+    fullName.innerHTML = name + " " + surname; 
+    ageElement.innerHTML = age;
     showBtn.style.display = "none";
 }
 
